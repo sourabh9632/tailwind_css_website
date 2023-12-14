@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-white">
+    <nav class="w-full h-25 flex justify-between px-4">
+        <div class="p-4">
+            <img class="h-15 w-24" src="https://www.tasteinmotion.com/_vercel/image?url=/logo.png&w=1536&q=100" alt="">
+
+        </div>
+        <div class="p-5">
+            <button id="rotate" class="rounded-full bg-black w-20 h-20 text-white">
+                click
+            </button>
+        </div>
+    </nav>
+    <header class="w-full h-auto mb-32">
+
+        <div class="first_text grid place-content-center p-9">
+
+            <span class="text-7xl/5 font-black">
+                WE BELIEVE THAT EVERY
+            </span>
+            <span class="text-7xl/5 font-black mt-16">
+                PRODUCT
+                &
+                BRAND
+                HAS
+            </span>
+            <span class="  text-7xl/5 font-black mt-16">
+                ITS
+                OWN
+            </span>
+            <span class="text-9xl/5 font-black grid justify-end ">
+                TASTE
+            </span>
+
+        </div>
+    </header>
+
+    <div class="h-100 w-100 flex flex-wrap ">
+        <video loop autoplay muted class="w-100 h-100">
+            <source src="../videos/website_new.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="w-100 h-100 relative bg-white">
+        <div class="w-100 h-96 overflow-hidden">
+            <video loop autoplay muted>
+                <source src="../videos/new.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="text-box ab
+        solute top-0 left-0  w-full h-full bg-white  text-black p-10">
+            <span class="text-8xl font-bold mt-16">TASTE
+                IS
+                A
+                BOUTIQUE</span>
+            <span class="text-8xl font-bold text-black mt-16">FULL
+                SERVICE</span>
+            <span class="text-8xl font-bold text-black mt-16">TABLETOP
+                COMPANY</span>
+        </div>
+
+    </div>
+
+    <div class=" green w-100 h-full flex justify-evenly" id="change">
+
+        <div class="max-w-xl m-14">
+            <video loop autoplay muted class="h-52 w-full md:h-full md:w-full rounded-xl shadow-lg" id="newVideo">
+                <source src="../videos/website_new.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class=" mt-32 p-4 ">
+            <div class="uppercase tracking-wider text-sm ">OUR DIRECTOR
+                <div class="">
+                    <p id="blue"
+                        class="text-4xl font-black cursor-pointer hover:text-black opacity-30 hover:opacity-95">
+                        <a href="scroll.html">SCHAUER</a>
+                    </p>
+
+                    <p id="purple"
+                        class="text-4xl font-black   cursor-pointer hover:text-black opacity-30 hover:opacity-95">
+                        MARGARET
+                        ELMAN</p>
+                    <p id="orange"
+                        class="text-4xl font-black   cursor-pointer hover:text-black opacity-30 hover:opacity-95">
+                        VICTORIA
+                        GRANOF</p>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="W-100 h-52">
+        <div class="flex justify-center mt-32">
+            <h1 class="font-bold text-2xl">WITH OFFICES IN</h1>
+        </div>
+        <div class="p-2">
+            <marquee direction="left" scrollamount="20" class="text-[300px] font-bold">
+                LOS ANGELES <span>AMERICA</span> NEW YORK VIENNA
+            </marquee>
+        </div>
+    </div>
+
+
+
+
+    <div class=" w-100 h-100 flex flex-col  p-10 my-32">
+
+        <div class="mt-20">
+
+            <div class="">
+                <p class="text-[120px] font-black mt-16 cursor-pointer hover:text-black">MEET
+                    THE DEEPLY</p>
+                <p class="text-[120px]  leading-[36.5px]  font-black  cursor-pointer hover:text-black">EXPERIENCED AND
+                </p>
+                <p class="text-[110px] font-black  cursor-pointer hover:text-black">DETERMINED PEOPLE</p>
+                <p class="text-[120px] font-black leading-[36.5px]  cursor-pointer hover:text-black">BEHIND TASTE →</p>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <footer class="w-full bg-black px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12">
+        <div class="w-46 flex flex-col item center mb-12">
+            <h1>HOME</h1>
+        </div>
+        <div class="w-46 flex flex-col item center mb-10">
+            <h1>DIRECTORS</h1>
+        </div>
+        <div class="w-46 flex flex-col item center mb-10">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="w-46 flex flex-col item center mb-10">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="w-46 flex flex-col item center mb-10">
+            <h1>SITE</h1>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const color = document.getElementById("blue")
+        const newColor = document.getElementById("change")
+
+        const pupColor = document.getElementById("purple")
+        const orgColor = document.getElementById("orange")
+        const newVideo = document.getElementById("newVideo")
+
+
+
+        color.addEventListener("mouseover", function () {
+            newColor.style.backgroundColor = "rgb(24, 200, 20);";
+        });
+
+        color.addEventListener("mouseout", function () {
+            newColor.style.backgroundColor = "";
+        });
+
+
+        pupColor.addEventListener("mouseover", function () {
+            newColor.style.backgroundColor = "purple";
+        });
+
+        pupColor.addEventListener("mouseout", function () {
+            newColor.style.backgroundColor = "";
+        });
+
+        orgColor.addEventListener("mouseover", function () {
+            newColor.style.backgroundColor = "orange";
+        });
+
+        orgColor.addEventListener("mouseout", function () {
+            newColor.style.backgroundColor = "";
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
